@@ -2,6 +2,8 @@ import { Box, Flex, useColorMode } from "@chakra-ui/react";
 import Sidebar from "./components/Sidebar";
 import TopNavigationBar from "./components/TopNavigationBar";
 import DashboardCardsComponent from "./components/DashboardCardsComponent";
+import LineGraphComponent from "./components/LineGraphComponent";
+import PieChartComponent from "./components/PieChartComponent";
 
 
 function App() {
@@ -25,7 +27,17 @@ function App() {
           {/* Dashboard Cards */}
           <DashboardCardsComponent />
 
-         
+          {/* Line Chart & Pie Chart (Side by Side) */}
+          <Flex mt={5} gap={5}>
+            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
+              <LineGraphComponent />
+            </Box>
+            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
+              <PieChartComponent />
+            </Box>
+          </Flex>
+
+
         </Box>
       </Flex>
     </Box>
