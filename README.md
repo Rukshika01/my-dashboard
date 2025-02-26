@@ -1,8 +1,26 @@
-# React + Vite
+# My Dashboard Project  
+This is a React-based dashboard page using Chakra UI.  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features  
+- Sidebar navigation  
+- Dashboard cards for revenue, students, and courses  
+- Line chart for student trends  
+- Pie chart for user engagement
+- Bar chart for income & expenditure
+- Polar area chart for performance metrix  
+- Activity log to track user actions  
 
-Currently, two official plugins are available:
+## 🔧 Installation  
+1. Clone this repository:  
+   
+   git clone https://github.com/Rukshika01/my-dashboard.git
+   npm install
+   npm start
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used  
+- React.js
+- Chakra UI
+- ApexChart
+- Chart.js
+
+
