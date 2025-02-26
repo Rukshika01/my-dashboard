@@ -2,11 +2,7 @@ import { Box, Flex, useColorMode } from "@chakra-ui/react";
 import Sidebar from "./components/Sidebar";
 import TopNavigationBar from "./components/TopNavigationBar";
 import DashboardCardsComponent from "./components/DashboardCardsComponent";
-import LineGraphComponent from "./components/LineGraphComponent";
-import ActivityLogComponent from "./components/ActivityLogComponent";
-import PieChartComponent from "./components/PieChartComponent";
-import BarChartComponent from "./components/BarChartComponent";
-import PerformanceMetricsComponent from "./components/PerformanceMetricsComponent";
+
 
 function App() {
   const { colorMode } = useColorMode();
@@ -29,30 +25,7 @@ function App() {
           {/* Dashboard Cards */}
           <DashboardCardsComponent />
 
-          {/* Line Chart & Pie Chart (Side by Side) */}
-          <Flex mt={5} gap={5}>
-            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
-              <LineGraphComponent />
-            </Box>
-            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
-              <PieChartComponent />
-            </Box>
-          </Flex>
-
-          {/* Bar Chart & Performance Metrics (Side by Side) */}
-          <Flex mt={5} gap={5}>
-            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
-              <BarChartComponent />
-            </Box>
-            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
-              <PerformanceMetricsComponent />
-            </Box>
-          </Flex>
-
-          {/* Activity Log (Full Width at Bottom) */}
-          <Box mt={5} p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
-            <ActivityLogComponent />
-          </Box>
+         
         </Box>
       </Flex>
     </Box>
