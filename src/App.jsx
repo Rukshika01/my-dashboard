@@ -46,6 +46,10 @@ function App() {
               <PerformanceMetricsComponent />
             </Box>
           </Flex>
+          {/* Activity Log (Full Width at Bottom) */}
+                    <Box mt={5} p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
+            <ActivityLogComponent />
+          </Box>
 
 
         </Box>
