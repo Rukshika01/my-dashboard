@@ -4,7 +4,7 @@ import TopNavigationBar from "./components/TopNavigationBar";
 import DashboardCardsComponent from "./components/DashboardCardsComponent";
 import LineGraphComponent from "./components/LineGraphComponent";
 import PieChartComponent from "./components/PieChartComponent";
-
+import BarChartComponent from "./components/BarChartComponent";
 
 function App() {
   const { colorMode } = useColorMode();
@@ -35,6 +35,13 @@ function App() {
             <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
               <PieChartComponent />
             </Box>
+          </Flex>
+          {/* Bar Chart & Performance Metrics (Side by Side) */}
+          <Flex mt={5} gap={5}>
+            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
+              <BarChartComponent />
+            </Box>
+            
           </Flex>
 
 
