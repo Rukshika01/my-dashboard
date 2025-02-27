@@ -5,6 +5,7 @@ import DashboardCardsComponent from "./components/DashboardCardsComponent";
 import LineGraphComponent from "./components/LineGraphComponent";
 import PieChartComponent from "./components/PieChartComponent";
 import BarChartComponent from "./components/BarChartComponent";
+import PerformanceMetricsComponent from "./components/PerformanceMetricsComponent";
 
 function App() {
   const { colorMode } = useColorMode();
@@ -41,7 +42,9 @@ function App() {
             <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
               <BarChartComponent />
             </Box>
-            
+            <Box flex="1" p={4} bg={colorMode === "light" ? "white" : "gray.700"} borderRadius="md" boxShadow="md">
+              <PerformanceMetricsComponent />
+            </Box>
           </Flex>
 
 
