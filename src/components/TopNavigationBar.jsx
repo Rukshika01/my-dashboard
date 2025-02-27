@@ -1,6 +1,6 @@
 import React from "react";
 import { 
-  Box, Flex, Image, Input, IconButton, Avatar, useColorMode 
+  Box, Flex, Image, Input, IconButton, Tooltip, Avatar, useColorMode 
 } from "@chakra-ui/react";
 import { 
   Search2Icon, BellIcon, SettingsIcon, MoonIcon, SunIcon 
@@ -39,6 +39,7 @@ function TopNavigationBar() {
             _placeholder={{ color: colorMode === "light" ? "#795548" : "#A0AEC0" }}
             pl="40px"
           />
+          <Tooltip label="Search" hasArrow>
           <IconButton 
             aria-label="Search"
             icon={<Search2Icon />} 
@@ -50,19 +51,28 @@ function TopNavigationBar() {
             color={iconColor} 
             _hover={{ bg: "transparent" }}
           />
+          </Tooltip>
         </Box>
 
         {/* Right: Icons & Avatar */}
         <Flex align="center" gap={4}>
+        <Tooltip label="Notifications" hasArrow>
           <IconButton aria-label="Notifications" icon={<BellIcon />} color={iconColor} />
+          </Tooltip>
+          <Tooltip label="Settings" hasArrow>  
           <IconButton aria-label="Settings" icon={<SettingsIcon />} color={iconColor} />
+          </Tooltip>
+          <Tooltip label="Change Theme" hasArrow>
           <IconButton 
             aria-label="Toggle Dark Mode" 
             icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}
             onClick={toggleColorMode} 
             color={iconColor} 
           />
+          </Tooltip>
+          <Tooltip label="My Profile" hasArrow>
           <Avatar src="https://bit.ly/broken-link" />
+          </Tooltip>
         </Flex>
       </Flex>
     </Box>
