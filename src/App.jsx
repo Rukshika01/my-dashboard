@@ -6,6 +6,7 @@ import LineGraphComponent from "./components/LineGraphComponent";
 import PieChartComponent from "./components/PieChartComponent";
 import BarChartComponent from "./components/BarChartComponent";
 import PerformanceMetricsComponent from "./components/PerformanceMetricsComponent";
+import ActivityLogComponent from "./components/ActivityLogComponent";
 
 function App() {
   const { colorMode } = useColorMode();
