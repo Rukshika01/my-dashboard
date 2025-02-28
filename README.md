@@ -11,11 +11,14 @@ This is a React-based dashboard page using Chakra UI.
 - Activity log to track user actions  
 
 ## 🔧 Installation  
-1. Clone this repository:  
-   
-   git clone https://github.com/Rukshika01/my-dashboard.git
-   npm install
-   npm start
+1️⃣ Download the ZIP file from the repository.
+2️⃣ Extract the contents and open the project folder in Visual Studio Code.
+3️⃣ Install dependencies by running the following command in the terminal:
+      - npm install
+4️⃣ Start the development server with:
+      - npm run dev
+      
+Your project should now be running successfully. 🚀
 
 ## Technologies Used  
 - React.js
