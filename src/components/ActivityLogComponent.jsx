@@ -3,7 +3,10 @@ import { Box, VStack, Text, useColorMode } from "@chakra-ui/react";
 const logs = [
   { message: "Adam123 Successfully logged in", time: "1 hrs ago" },
   { message: "EvelynJenner Successfully logged in", time: "3 hrs ago" },
-  
+  { message: "KatePadi11 Logged Out", time: "8 hrs ago" },
+  { message: "HarryStyles23 Changed Username to Harry24", time: "13 hrs ago" },
+  { message: "peteHammer Successfully logged in", time: "14 hrs ago" },
+  { message: "Brindha000 Successfully logged in", time: "20 hrs ago" },
 ];
 
 const ActivityLog = () => {
