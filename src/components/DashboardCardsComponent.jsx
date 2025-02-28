@@ -4,11 +4,18 @@ import CountUp from "react-countup";
 const DashboardCardsComponent = () => {
   const { colorMode } = useColorMode();
 
+  // Get the current date
+  const currentDate = new Date().toLocaleDateString("en-UK", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+
   // Card data
   const stats = [
     { title: "Total Students", value: 1051 },
     { title: "Total No. of Courses", value: 42 },
-   
+    { title: "Total Revenue", value: 75000 },
   ];
 
   return (
@@ -34,7 +41,8 @@ const DashboardCardsComponent = () => {
             <CountUp start={0} end={stat.value} duration={2} separator="," />
           </Text>
 
-          <Text fontSize="sm" color={colorMode === "light" ? "gray.500" : "gray.300"}>18 Mar 2024</Text>
+          {/* Display Current Date */}
+          <Text fontSize="sm" color={colorMode === "light" ? "gray.500" : "gray.300"}>{currentDate}</Text>
         </Box>
       ))}
     </SimpleGrid>
