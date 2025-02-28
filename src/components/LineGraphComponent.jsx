@@ -2,7 +2,7 @@ import { Box, useColorMode, Text } from "@chakra-ui/react";
 import Chart from "react-apexcharts";
 import { useState, useMemo } from "react";
 
-const AreaChartComponent = () => {
+const LineGraphComponent = () => {
   const { colorMode } = useColorMode(); 
   const [chartData] = useState([
     {
@@ -87,4 +87,4 @@ const AreaChartComponent = () => {
   );
 };
 
-export default AreaChartComponent;
+export default LineGraphComponent;
