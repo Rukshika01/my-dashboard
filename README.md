@@ -26,4 +26,8 @@ Your project should now be running successfully. 🚀
 - ApexChart
 - Chart.js
 
+![image](https://github.com/user-attachments/assets/f840de95-beb0-4e8b-a535-eb0455c70d03)
+![image](https://github.com/user-attachments/assets/2c0e749b-0d70-4f8b-8dff-72d70a192b61)
+![image](https://github.com/user-attachments/assets/d9dfe908-0830-4dc0-9a9c-37ce3d99a95b)
+
 
