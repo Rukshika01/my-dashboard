@@ -15,7 +15,7 @@ function App() {
       bg={colorMode === "light" ? "#EFEBE9" : "#1A202C"} 
       minH="100vh" 
       color={colorMode === "light" ? "#3E2723" : "white"}
-      pt="71px" // Add padding to prevent overlap with fixed navbar
+      pt="99px" // Add padding to prevent overlap with fixed navbar
     >
       {/* Top Navigation Bar (Fixed at the Top) */} 
       <TopNavigationBar />
