@@ -10,7 +10,7 @@ function Sidebar() {
     <Box
       position="fixed"
       left="0"
-      top="74px" 
+      top="124px" 
       h="calc(100vh - 64px)"  
       w="200px"
       bg="#24080157"  
