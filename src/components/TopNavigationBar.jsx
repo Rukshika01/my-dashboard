@@ -25,7 +25,7 @@ function TopNavigationBar() {
       <Flex justify="space-between" align="center">
         {/* Left: Logo */}
         <Flex align="center" gap={5}>
-          <Image src="src/assets/logo1.JPG" alt="Logo" h="50px" />
+          <Image src="src/assets/logo2.png" alt="Logo" h="100px" />
         </Flex>
 
         {/* Middle: Search Bar */}
